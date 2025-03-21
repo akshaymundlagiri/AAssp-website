@@ -1,0 +1,97 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Gallery Image Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Fixed Image Size for Grid */
+.gallery-img {
+    width: 100%;
+    height: 250px; /* Consistent height */
+    object-fit: cover; /* Prevents stretching */
+    border-radius: 10px;
+    border: 4px solid #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+    border-color: #ff6600;
+    transform: scale(1.05);
+}
+
+/* Enlarged Modal Image */
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+}
+
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Image Styling */
+.gallery-img {
+    width: 100%;
+    height: 250px; /* Uniform size */
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #007bff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Floating Effect on Hover & Touch */
+.gallery-img:hover,
+.gallery-img:active { /* Works on mobile touch */
+    transform: translateY(-8px); /* Slight lift effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
